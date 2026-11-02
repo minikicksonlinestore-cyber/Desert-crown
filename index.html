@@ -44,32 +44,38 @@
       </div>
       <div class="stage">
         <div class="halo" aria-hidden="true"><img src="assets/logo-seal.jpg" alt="" width="1254" height="1254"></div>
-        <svg id="phone" class="phone" viewBox="0 0 260 520" role="img" aria-label="A phone with a cracked screen that can be shown repaired">
+        <svg id="phone" class="phone" viewBox="0 0 280 540" role="img" aria-label="A phone with a cracked screen that can be shown repaired">
           <defs>
-            <linearGradient id="gg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#936b45"/><stop offset=".45" stop-color="#fce4c2"/><stop offset="1" stop-color="#dfb073"/></linearGradient>
-            <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#050403"/><stop offset=".6" stop-color="#3b2614"/><stop offset="1" stop-color="#dfb073"/></linearGradient>
-            <linearGradient id="gl" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".35"/><stop offset=".4" stop-color="#fff" stop-opacity="0"/></linearGradient>
-            <clipPath id="scr"><rect x="16" y="16" width="228" height="488" rx="30"/></clipPath>
+            <linearGradient id="gg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#936b45"/><stop offset=".3" stop-color="#fce4c2"/><stop offset=".55" stop-color="#dfb073"/><stop offset=".8" stop-color="#f0d0a0"/><stop offset="1" stop-color="#a87a4a"/></linearGradient>
+            <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#000"/><stop offset=".55" stop-color="#2a190b"/><stop offset="1" stop-color="#b98652"/></linearGradient>
+            <linearGradient id="shard" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fce4c2" stop-opacity=".55"/><stop offset="1" stop-color="#fce4c2" stop-opacity="0"/></linearGradient>
+            <clipPath id="scr"><rect x="22" y="22" width="236" height="496" rx="34"/></clipPath>
           </defs>
-          <rect x="2" y="2" width="256" height="516" rx="42" fill="#050403" stroke="url(#gg)" stroke-width="4"/>
+          <rect x="-1" y="130" width="5" height="46" rx="2" fill="url(#gg)"/><rect x="-1" y="190" width="5" height="70" rx="2" fill="url(#gg)"/><rect x="276" y="170" width="5" height="90" rx="2" fill="url(#gg)"/>
+          <rect x="4" y="4" width="272" height="532" rx="48" fill="#050403" stroke="url(#gg)" stroke-width="6"/>
+          <rect x="11" y="11" width="258" height="518" rx="42" fill="none" stroke="#dfb073" stroke-opacity=".35" stroke-width="1"/>
           <g clip-path="url(#scr)">
-            <rect x="16" y="16" width="228" height="488" fill="url(#sky)"/>
-            <circle cx="130" cy="300" r="44" fill="#fce4c2"/>
-            <path d="M16 380 C70 330 120 360 170 335 C205 318 230 330 244 336 L244 504 L16 504Z" fill="#dfb073"/>
-            <path d="M16 430 C60 395 110 420 160 400 C200 385 225 395 244 402 L244 504 L16 504Z" fill="#936b45"/>
-            <path d="M16 476 C70 450 130 470 244 448 L244 504 L16 504Z" fill="#000"/>
-            <text x="130" y="120" text-anchor="middle" font-family="Cinzel, serif" font-weight="300" font-size="46" fill="#fce4c2">9:41</text>
-            <rect class="sheen" x="16" y="16" width="228" height="488" fill="url(#gl)"/>
-            <g class="crack" fill="none" stroke="#fce4c2" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-              <path pathLength="1" d="M168 196 L132 150 L120 96 L96 40 L90 16"/>
-              <path pathLength="1" d="M168 196 L214 170 L226 124 L244 90"/>
-              <path pathLength="1" d="M168 196 L196 248 L190 312 L214 372 L222 430 L216 504"/>
-              <path pathLength="1" d="M168 196 L116 224 L72 218 L16 250"/>
-              <path pathLength="1" d="M168 196 L150 268 L104 306 L96 372 L60 420 L40 504"/>
-              <path pathLength="1" d="M132 150 L170 138 L214 170 L196 248 L150 268 L116 224 L132 150"/>
+            <rect x="22" y="22" width="236" height="496" fill="url(#sky)"/>
+            <g fill="#fce4c2"><path d="M140 70l-9 11h-6l-4 8 6 4h26l6-4-4-8h-6z" opacity=".95"/><circle cx="122" cy="76" r="2.4"/><circle cx="158" cy="76" r="2.4"/><circle cx="140" cy="64" r="2.6"/></g>
+            <text x="140" y="150" text-anchor="middle" font-family="Cinzel, serif" font-weight="600" font-size="52" fill="#fce4c2">9:41</text>
+            <text x="140" y="176" text-anchor="middle" font-family="Outfit, sans-serif" font-size="11" letter-spacing="4" fill="#dfb073">MUSCAT</text>
+            <circle cx="140" cy="318" r="48" fill="#fce4c2"/>
+            <path d="M22 400 C80 345 130 378 186 352 C220 336 244 346 258 352 L258 518 L22 518Z" fill="#dfb073"/>
+            <path d="M22 450 C70 415 125 440 178 420 C214 405 240 414 258 420 L258 518 L22 518Z" fill="#936b45"/>
+            <path d="M22 494 C80 468 140 488 258 466 L258 518 L22 518Z" fill="#000"/>
+            <polygon points="150,22 258,22 258,300 74,518 22,518 22,470" fill="url(#shard)" opacity=".5"/>
+            <rect class="sheen" x="22" y="22" width="236" height="496" fill="url(#shard)"/>
+            <g class="crack" fill="none" stroke="#fff6e6" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+              <path pathLength="1" d="M178 210 L140 162 L128 104 L102 44 L96 22"/>
+              <path pathLength="1" d="M178 210 L226 184 L240 134 L258 98"/>
+              <path pathLength="1" d="M178 210 L208 264 L202 330 L228 392 L236 452 L230 518"/>
+              <path pathLength="1" d="M178 210 L122 240 L76 234 L22 268"/>
+              <path pathLength="1" d="M178 210 L158 284 L110 324 L102 392 L64 440 L44 518"/>
+              <path pathLength="1" d="M140 162 L180 150 L226 184 L208 264 L158 284 L122 240 L140 162"/>
             </g>
           </g>
-          <rect x="96" y="26" width="68" height="16" rx="8" fill="#050403"/>
+          <rect x="102" y="32" width="76" height="20" rx="10" fill="#000"/><circle cx="162" cy="42" r="4" fill="#1a1208" stroke="#dfb073" stroke-opacity=".5"/>
+          <rect x="108" y="508" width="64" height="4" rx="2" fill="#fce4c2" opacity=".7"/>
         </svg>
         <div class="fixbar"><p class="state">Screen: <b id="state">Cracked</b></p><button class="btn ghost" id="fix" type="button" aria-pressed="false">Repair it</button></div>
       </div>
@@ -87,6 +93,7 @@
     </div>
   </section>
 
+  <div class="orn" aria-hidden="true"><span></span><i>&#9733;</i><span></span></div>
   <section id="repairs" class="sec">
     <div class="wrap">
       <div class="head" data-r>
@@ -181,6 +188,7 @@
     </div>
   </section>
 
+  <div class="orn" aria-hidden="true"><span></span><i>&#9733;</i><span></span></div>
   <section id="faq" class="sec">
     <div class="wrap faq-grid">
       <div class="head" data-r>

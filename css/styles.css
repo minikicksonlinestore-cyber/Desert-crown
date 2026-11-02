@@ -262,3 +262,35 @@ footer h4 { letter-spacing: .2em; }
 .hero-grid { grid-template-columns: minmax(0, 1fr); }
 @media (min-width: 960px) { .hero-grid { grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr); } .hero h1 { font-size: clamp(2.4rem, 5.4vw, 4.6rem); } }
 .hero h1 em { white-space: normal; }
+
+/* richer finish */
+.phone { width: min(230px, 56vw); }
+.stage { min-height: 380px; }
+.phone { filter: drop-shadow(0 34px 50px rgba(0,0,0,.8)) drop-shadow(0 0 50px rgba(223,176,115,.3)); }
+.halo { opacity: .6; width: min(520px, 135%); }
+.hero::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 120px; background: linear-gradient(transparent, #000); pointer-events: none; }
+.btn.solid { position: relative; overflow: hidden; }
+.btn.solid::after { content: ""; position: absolute; top: 0; bottom: 0; left: -60%; width: 40%; background: linear-gradient(100deg, transparent, rgba(255,255,255,.55), transparent); transform: skewX(-20deg); animation: glint 4.5s ease-in-out infinite; }
+@keyframes glint { 0%, 55% { left: -60%; } 80%, 100% { left: 130%; } }
+.orn { display: flex; align-items: center; justify-content: center; gap: 18px; color: var(--gold); padding-block: 8px; max-width: 520px; margin: 0 auto; }
+.orn span { flex: 1; height: 1px; background: linear-gradient(90deg, transparent, var(--gold), transparent); }
+.hero-copy .kicker { padding: 7px 16px; border: 1px solid rgba(223,176,115,.45); border-radius: 999px; background: rgba(0,0,0,.45); }
+.hero-copy .kicker i { display: none; }
+.bt, .tips li, .fact { position: relative; }
+.bt::before { content: ""; position: absolute; inset: 0; border-radius: inherit; background: radial-gradient(300px 160px at 100% 0%, rgba(223,176,115,.14), transparent 70%); pointer-events: none; }
+.bt.feature::before { display: none; }
+body::before { content: ""; position: fixed; inset: 0; z-index: 0; pointer-events: none; opacity: .5; background-image: radial-gradient(rgba(223,176,115,.14) 1px, transparent 1px); background-size: 26px 26px; }
+main, footer, header { position: relative; z-index: 1; } header.top { position: sticky; }
+@media (max-width: 899px) {
+  .hero-grid { padding-top: 26px; gap: 10px; }
+  .hero h1 { font-size: clamp(2.2rem, 10.5vw, 3.2rem); }
+  .lede { font-size: 1.06rem; margin-top: 18px; }
+  .cta { margin-top: 24px; } .cta .btn { flex: 1 1 140px; min-height: 54px; padding: 0 14px; }
+  .stage { min-height: 330px; margin-top: 14px; }
+  .phone { width: min(190px, 50vw); }
+  .halo { width: 120%; top: 44%; }
+  .facts-strip .wrap { grid-template-columns: 1fr 1fr; gap: 6px 18px; }
+  .fact { padding: 18px 8px 14px 0; } .fact h3 { font-size: 1.05rem; } .fact p { font-size: .88rem; } .fact b { font-size: 1.6rem; }
+  .bt { padding: 22px; } .bt h3 { margin-top: 26px; } .bt.feature h3 { margin-top: 50px; }
+}
+@media (max-width: 899px) { .cta .btn { white-space: nowrap; font-size: .92rem; } .cta .btn.solid { flex: 2 1 auto; } }
