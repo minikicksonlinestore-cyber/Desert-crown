@@ -450,3 +450,6 @@ main, footer, header { position: relative; z-index: 1; } header.top { position: 
 @media (max-width: 899px) { .stage { width: 100%; } .hero-photo { height: 400px; object-position: 50% 15%;
   -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 22%, #000 78%, transparent 100%), linear-gradient(180deg, #000 55%, transparent 100%); -webkit-mask-composite: source-in;
   mask-image: linear-gradient(90deg, transparent 0, #000 22%, #000 78%, transparent 100%), linear-gradient(180deg, #000 55%, transparent 100%); mask-composite: intersect; } }
+
+.dock { display: none !important; }
+@media (max-width: 899px) { footer { padding-bottom: 0; } }
