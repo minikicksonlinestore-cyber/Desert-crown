@@ -41,9 +41,9 @@
       a = dots[i];
       for (j = i + 1; j < dots.length; j++) {
         b = dots[j]; dx = a.x - b.x; dy = a.y - b.y; dist = Math.sqrt(dx * dx + dy * dy);
-        if (dist < lim) { ctx.strokeStyle = 'rgba(240,217,130,' + ((1 - dist / lim) * .35).toFixed(2) + ')'; ctx.lineWidth = 1; ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y); ctx.stroke(); }
+        if (dist < lim) { ctx.strokeStyle = 'rgba(252,228,194,' + ((1 - dist / lim) * .35).toFixed(2) + ')'; ctx.lineWidth = 1; ctx.beginPath(); ctx.moveTo(a.x, a.y); ctx.lineTo(b.x, b.y); ctx.stroke(); }
       }
-      ctx.beginPath(); ctx.arc(a.x, a.y, a.r, 0, 6.283); ctx.fillStyle = 'rgba(240,217,130,.8)'; ctx.fill();
+      ctx.beginPath(); ctx.arc(a.x, a.y, a.r, 0, 6.283); ctx.fillStyle = 'rgba(252,228,194,.8)'; ctx.fill();
     }
     if (!still) requestAnimationFrame(draw);
   }
