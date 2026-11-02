@@ -54,3 +54,22 @@
   var io = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }); }, { threshold: .1, rootMargin: '0px 0px -30px 0px' });
   els.forEach(function (el, i) { el.style.setProperty('--d', (i % 4) * 80 + 'ms'); io.observe(el); });
 })();
+
+(function () {
+  var items = document.querySelectorAll('#stp li'), bar = document.getElementById('fillbar'), pill = document.getElementById('pill'), prob = document.getElementById('prob');
+  if (!items.length) return;
+  var names = ['Bring it in', 'We check it', 'You approve', 'We repair', 'You collect'];
+  var faults = ['Cracked screen', 'Battery draining fast', 'Charging port loose', 'Water damage', 'Camera not working'];
+  var i = 0, f = 0;
+  function show(n) {
+    items.forEach(function (el, k) { el.classList.toggle('on', k === n); });
+    bar.style.width = (n / 4 * 100) + '%'; pill.textContent = names[n];
+  }
+  show(0);
+  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  setInterval(function () {
+    i = (i + 1) % 5;
+    if (i === 0) { f = (f + 1) % faults.length; prob.style.opacity = 0; setTimeout(function () { prob.textContent = faults[f]; prob.style.opacity = 1; }, 300); }
+    show(i);
+  }, 1800);
+})();
