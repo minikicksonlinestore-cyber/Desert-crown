@@ -509,3 +509,11 @@ html[lang="ar"] .wm b { font-family: "Cinzel", Georgia, serif; }
 @media (max-width: 899px) { .wm b { font-size: .68rem; letter-spacing: .03em; } .wm small { font-size: .78rem; } .bar { gap: 10px; } .seal img { width: 54px; height: 54px; } .lang { padding: 0 12px; min-height: 40px; font-size: .85rem; } .menu { width: 42px; height: 42px; } }
 @media (max-width: 400px) { .wm small { display: block !important; } .wm b { font-size: .62rem; } }
 @media (max-width: 899px) { .bar { gap: 8px; } .mini { gap: 8px; min-width: 0; flex: 1 1 auto; } .wm { min-width: 0; } .wm b { font-size: .58rem; letter-spacing: .02em; white-space: normal; line-height: 1.15; } .seal img { width: 48px; height: 48px; } .lang { padding: 0 10px; font-size: .8rem; min-height: 38px; } .menu { width: 40px; height: 40px; flex: none; } }
+
+/* header name: Arabic first, English second */
+.wm small { font-size: 1.12rem; font-weight: 800; color: var(--gold); margin: 0 0 3px; line-height: 1.15; }
+.wm b { font-size: .7rem; letter-spacing: .08em; color: var(--gold-lt); font-weight: 700; }
+html[dir="rtl"] .wm b { font-size: .7rem; }
+@media (max-width: 899px) { .wm small { font-size: .9rem; } .wm b { font-size: .56rem; letter-spacing: .03em; } }
+@media (max-width: 899px) { .wm small { font-size: .8rem; white-space: nowrap; } .wm b { font-size: .52rem; } }
+@media (min-width: 380px) and (max-width: 899px) { .wm small { font-size: .88rem; } .wm b { font-size: .56rem; } }
