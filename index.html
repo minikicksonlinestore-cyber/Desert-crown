@@ -5,57 +5,45 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Desert Crown Mobile</title>
 <meta name="description" content="Mobile phone repair and sales at Lulu Ruwi Souq, Muscat, Oman. Screen, battery and charging port repairs, new phones and accessories.">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700;800&family=Hanken+Grotesk:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,600&family=Outfit:wght@300;500;700;800&family=Hanken+Grotesk:wght@400;500;600&display=swap">
 <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<div class="safe-band" aria-hidden="true"></div>
 <header class="top">
-  <div class="wrap">
-    <div class="bar">
-      <a class="mini" href="#top" aria-label="Desert Crown home">
-        <span class="seal"><img src="assets/logo-seal.jpg" alt="" width="1254" height="1254"></span>
-        <span class="wm"><b class="gold">Desert Crown</b><small>Mobile repair &amp; sales</small></span>
-      </a>
-      <nav id="nav" aria-label="Sections">
-        <a href="#about">About</a>
-        <a href="#repairs">Repairs</a>
-        <a href="#phones">Phones</a>
-        <a href="#process">How it works</a>
-        <a href="#faq">FAQ</a>
-        <a href="#visit">Visit us</a>
-      </nav>
-      <a class="btn solid hcall" href="tel:+96876438265">Call now</a>
-      <button class="menu" id="menu" type="button" aria-expanded="false" aria-controls="nav" aria-label="Menu"><span></span><span></span><span></span></button>
-    </div>
+  <div class="wrap bar">
+    <a class="mini" href="#top" aria-label="Desert Crown home">
+      <span class="seal"><img src="assets/logo-seal.jpg" alt="" width="1254" height="1254"></span>
+      <span class="wm"><b>Desert Crown</b><small>Mobile repair &amp; sales</small></span>
+    </a>
+    <nav id="nav" aria-label="Sections">
+      <a href="#repairs">Repairs</a>
+      <a href="#phones">Phones</a>
+      <a href="#process">How it works</a>
+      <a href="#about">About</a>
+      <a href="#faq">FAQ</a>
+      <a href="#visit">Visit us</a>
+    </nav>
+    <a class="btn solid hcall" href="tel:+96876438265">Call now</a>
+    <button class="menu" id="menu" type="button" aria-expanded="false" aria-controls="nav" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
 </header>
 
 <main id="top">
-  <div class="hero">
+  <section class="hero">
     <canvas id="dust" aria-hidden="true"></canvas>
-    <div class="wrap">
-      <div>
-        <p class="eyebrow">Lulu Ruwi Souq &middot; Muscat</p>
-        <h1><span class="thin">From cracked</span><span class="gold">to flawless.</span></h1>
-        <p class="lede">Screens, batteries, charging ports and water damage, repaired at Lulu Ruwi Souq. New phones and accessories in the same shop.</p>
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="kicker"><i></i>Lulu Ruwi Souq &middot; Muscat</p>
+        <h1>Broken today.<em>Flawless tomorrow.</em></h1>
+        <p class="lede">Screens, batteries, charging ports and water damage repaired by people who tell you the price first. New phones and accessories in the same shop.</p>
         <div class="cta">
-          <a class="btn solid" href="tel:+96876438265">Call +968 76438265</a>
-          <a class="btn ghost" href="https://wa.me/96876438265" target="_blank" rel="noopener">WhatsApp us</a>
+          <a class="btn solid big" href="tel:+96876438265">Call +968 76438265</a>
+          <a class="btn ghost big" href="https://wa.me/96876438265" target="_blank" rel="noopener">WhatsApp</a>
         </div>
         <p class="alt">Second line: <a href="https://wa.me/96875145195" target="_blank" rel="noopener">+968 75145195</a></p>
-        <ul class="proof" aria-label="Why choose us">
-          <li><b>Price first</b><span>before any work starts</span></li>
-          <li><b>Tested</b><span>before you take it home</span></li>
-          <li><b>Repair + sales</b><span>in one shop</span></li>
-        </ul>
       </div>
       <div class="stage">
-        <svg class="orbit" viewBox="0 0 520 520" aria-hidden="true">
-          <defs><linearGradient id="og" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#d4af37" stop-opacity="0"/><stop offset=".5" stop-color="#f0d982"/><stop offset="1" stop-color="#d4af37" stop-opacity="0"/></linearGradient></defs>
-          <g><ellipse cx="260" cy="260" rx="250" ry="92" transform="rotate(-24 260 260)" fill="none" stroke="url(#og)" stroke-width="2.5"/><circle cx="470" cy="177" r="6" fill="#f0d982"/></g>
-          <g class="rev"><ellipse cx="260" cy="260" rx="215" ry="215" fill="none" stroke="#d4af37" stroke-opacity=".28" stroke-dasharray="2 10" stroke-width="2"/><circle cx="260" cy="45" r="4" fill="#d4af37"/></g>
-        </svg>
+        <div class="halo" aria-hidden="true"><img src="assets/logo-seal.jpg" alt="" width="1254" height="1254"></div>
         <svg id="phone" class="phone" viewBox="0 0 260 520" role="img" aria-label="A phone with a cracked screen that can be shown repaired">
           <defs>
             <linearGradient id="gg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#a07d1c"/><stop offset=".45" stop-color="#f0d982"/><stop offset="1" stop-color="#b48c24"/></linearGradient>
@@ -83,167 +71,146 @@
           </g>
           <rect x="96" y="26" width="68" height="16" rx="8" fill="#03201d"/>
         </svg>
-        <p class="state">Screen: <b id="state">Cracked</b></p>
-        <button class="btn ghost" id="fix" type="button" aria-pressed="false">Repair it</button>
+        <div class="fixbar"><p class="state">Screen: <b id="state">Cracked</b></p><button class="btn ghost" id="fix" type="button" aria-pressed="false">Repair it</button></div>
       </div>
     </div>
-    <svg class="dunes" viewBox="0 0 1440 100" preserveAspectRatio="none" aria-hidden="true">
-      <path d="M0 100 L1440 18 L1440 100Z" fill="#0a3d38"/>
-      <path d="M0 100 L1440 18" fill="none" stroke="#d4af37" stroke-width="3"/>
-      <path d="M0 100 L1440 38" fill="none" stroke="#d4af37" stroke-width="1" stroke-opacity=".5"/>
-    </svg>
-  </div>
+  </section>
 
-  <div class="band" aria-label="Our values">
-    <div class="wrap"><span>Excellence</span><i aria-hidden="true"></i><span>Integrity</span><i aria-hidden="true"></i><span>Innovation</span></div>
-  </div>
+  <div class="ticker" aria-hidden="true"><div class="track"><span>Screen repair</span><i></i><span>Battery</span><i></i><span>Charging port</span><i></i><span>Water damage</span><i></i><span>New phones</span><i></i><span>Accessories</span><i></i><span>Screen repair</span><i></i><span>Battery</span><i></i><span>Charging port</span><i></i><span>Water damage</span><i></i><span>New phones</span><i></i><span>Accessories</span><i></i></div></div>
 
-  <section id="about">
+  <section class="facts-strip" aria-label="Why choose us">
     <div class="wrap">
-      <div class="head">
-        <p class="eyebrow">About us</p>
-        <h2>Your phone shop in <span class="gold">Ruwi.</span></h2>
+      <div class="fact" data-r><b>01</b><h3>Price first</h3><p>You hear the cost and the time before any work starts.</p></div>
+      <div class="fact" data-r><b>02</b><h3>Tested</h3><p>Every repair is checked before the phone goes home.</p></div>
+      <div class="fact" data-r><b>03</b><h3>Repair + sales</h3><p>Fix your phone or pick up a new one, in one shop.</p></div>
+      <div class="fact" data-r><b>04</b><h3>Plain words</h3><p>A straight diagnosis. If it isn't worth fixing, we say so.</p></div>
+    </div>
+  </section>
+
+  <section id="repairs" class="sec">
+    <div class="wrap">
+      <div class="head" data-r>
+        <p class="kicker"><i></i>Repair services</p>
+        <h2>What we <em>fix.</em></h2>
+        <p>Not listed? Bring it in or call. We will look at it and tell you what can be done.</p>
       </div>
-      <div class="about">
-        <img class="seal-lg" src="assets/logo-seal.jpg" alt="Desert Crown Investment LLC seal" width="1254" height="1254" loading="lazy">
-        <div class="copy-block">
+      <div class="bento">
+        <article class="bt feature" data-r><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M9 7l3 3-2 3 3 3"/></svg><h3>Screen replacement</h3><p>Cracked glass, dead touch, lines or dark patches on the display. Our most common repair, and the one people ask about first.</p><a class="btn dark" href="https://wa.me/96876438265?text=Hello%2C%20I%20need%20a%20screen%20repair." target="_blank" rel="noopener">Ask about a screen</a></article>
+        <article class="bt" data-r><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="8" width="16" height="9" rx="2"/><path d="M21 11v3M8 12.5h4"/></svg><h3>Battery replacement</h3><p>Fast draining, sudden shutdowns, or a swollen battery.</p></article>
+        <article class="bt" data-r><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3v5M15 3v5M7 8h10v4a5 5 0 0 1-10 0zM12 17v4"/></svg><h3>Charging port</h3><p>Loose cable, slow charging, or a phone that no longer charges.</p></article>
+        <article class="bt wide" data-r><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/></svg><h3>Water damage</h3><p>Cleaning and testing after a drop in water. Keep the phone switched off and bring it in quickly.</p></article>
+        <article class="bt" data-r><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="13" r="4"/><path d="M4 8h3l2-3h6l2 3h3v11H4z"/></svg><h3>Speaker, mic &amp; camera</h3><p>Muffled calls, no sound, blurry or black camera images.</p></article>
+        <article class="bt" data-r><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M9 10l-2 2 2 2M15 10l2 2-2 2"/></svg><h3>Software &amp; updates</h3><p>Freezing, slow performance, failed updates and app problems.</p></article>
+        <article class="bt" data-r><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h14v18H5z"/><path d="M8 7l8 10"/></svg><h3>Back glass &amp; body</h3><p>Cracked rear panels and damaged frames.</p></article>
+        <article class="bt" data-r><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h13l-3-3M20 16H7l3 3"/></svg><h3>Backup &amp; transfer</h3><p>Moving your photos, contacts and chats to a new phone.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="phones" class="sec gold-sec">
+    <div class="wrap split">
+      <div data-r>
+        <p class="kicker dark"><i></i>Phone sales</p>
+        <h2>Pick up a <em>new one.</em></h2>
+        <p class="sub">Tell us your budget and what you use your phone for. We will show you what suits.</p>
+        <p class="fine">Stock and prices change. Call ahead if you want a particular model.</p>
+        <a class="btn dark" href="tel:+96876438265">Call to check stock</a>
+      </div>
+      <div class="lists">
+        <div class="lcard" data-r><h3>Mobile phones</h3><ul><li>New smartphones</li><li>Help choosing for your budget and needs</li><li>Setup and data transfer when you buy</li></ul></div>
+        <div class="lcard" data-r><h3>Accessories</h3><ul><li>Cases and covers</li><li>Screen protectors</li><li>Chargers and cables</li><li>Earphones and power banks</li></ul></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="process" class="sec">
+    <div class="wrap">
+      <div class="head" data-r>
+        <p class="kicker"><i></i>Repair process</p>
+        <h2>Five steps. <em>No surprises.</em></h2>
+        <p>You know the problem, the price and the time before we touch your phone.</p>
+      </div>
+      <ol class="steps">
+        <li data-r><span class="num">1</span><h3>Bring it in</h3><p>Visit us at Lulu Ruwi Souq. Tell us what is wrong and when it started.</p></li>
+        <li data-r><span class="num">2</span><h3>We check it</h3><p>We test the phone, find the fault and explain it in plain words.</p></li>
+        <li data-r><span class="num">3</span><h3>You approve</h3><p>Price and time first. Nothing is repaired until you say yes.</p></li>
+        <li data-r><span class="num">4</span><h3>We repair</h3><p>Done with care, then tested before it goes back to you.</p></li>
+        <li data-r><span class="num">5</span><h3>You collect</h3><p>Check the phone with us before you leave, then take it home.</p></li>
+      </ol>
+      <div class="prep" data-r>
+        <div><h3>Before you come</h3>
+          <ul><li>Back up your photos and contacts if the phone still works.</li><li>Note your phone model and what the problem is.</li><li>If it got wet, switch it off and do not charge it.</li></ul></div>
+        <a class="btn solid big" href="https://wa.me/96876438265?text=Hello%2C%20I%20need%20a%20phone%20repair." target="_blank" rel="noopener">Tell us the problem on WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="sec ivory">
+    <div class="wrap about">
+      <div class="about-seal" data-r><img src="assets/logo-seal.jpg" alt="Desert Crown Investment LLC seal" width="1254" height="1254" loading="lazy"></div>
+      <div>
+        <div class="head" data-r>
+          <p class="kicker dark"><i></i>About us</p>
+          <h2>Your phone shop <em>in Ruwi.</em></h2>
+        </div>
+        <div class="about-copy" data-r>
           <p><strong>Desert Crown Investment LLC</strong> is a registered company in Muscat, Oman. Our shop at Lulu Ruwi Souq does two things: we repair mobile phones and we sell them.</p>
           <p>Bring a broken phone and we will find the fault, explain it in plain words and tell you the price and the time before any work starts. Come to buy and we will help you choose a phone and the accessories that suit how you use it.</p>
         </div>
         <div class="values">
-          <div class="value"><h3>Excellence</h3><p>Careful repairs, tested before you take the phone home.</p></div>
-          <div class="value"><h3>Integrity</h3><p>A straight diagnosis and a clear price. If a repair is not worth doing, we will say so.</p></div>
-          <div class="value"><h3>Innovation</h3><p>We keep up with new phones, new parts and new ways to repair them.</p></div>
+          <div data-r><h3>Excellence</h3><p>Careful repairs, tested before you take the phone home.</p></div>
+          <div data-r><h3>Integrity</h3><p>A straight diagnosis and a clear price. If a repair is not worth doing, we will say so.</p></div>
+          <div data-r><h3>Innovation</h3><p>We keep up with new phones, new parts and new ways to repair them.</p></div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="repairs">
+  <section id="tips" class="sec tight">
     <div class="wrap">
-      <div class="head">
-        <p class="eyebrow">Repair services</p>
-        <h2>What we <span class="gold">fix.</span></h2>
-        <p>If your phone has a problem that is not listed here, bring it in or call. We will look at it and tell you what can be done.</p>
-      </div>
-      <ul class="index">
-        <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M9 7l3 3-2 3 3 3"/></svg><h3>Screen replacement</h3><p>Cracked glass, dead touch, lines or dark patches on the display.</p></li>
-        <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="8" width="16" height="9" rx="2"/><path d="M21 11v3M8 12.5h4"/></svg><h3>Battery replacement</h3><p>Fast draining, sudden shutdowns, or a swollen battery.</p></li>
-        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3v5M15 3v5M7 8h10v4a5 5 0 0 1-10 0zM12 17v4"/></svg><h3>Charging port repair</h3><p>Loose cable, slow charging, or a phone that no longer charges.</p></li>
-        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/></svg><h3>Water damage</h3><p>Cleaning and testing after a drop in water. Keep the phone switched off and bring it in quickly.</p></li>
-        <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="13" r="4"/><path d="M4 8h3l2-3h6l2 3h3v11H4z"/></svg><h3>Speaker, mic and camera</h3><p>Muffled calls, no sound, blurry or black camera images.</p></li>
-        <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M9 10l-2 2 2 2M15 10l2 2-2 2"/></svg><h3>Software and updates</h3><p>Freezing, slow performance, failed updates and app problems.</p></li>
-        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h14v18H5z"/><path d="M8 7l8 10"/></svg><h3>Back glass and body</h3><p>Cracked rear panels and damaged frames.</p></li>
-        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h13l-3-3M20 16H7l3 3"/></svg><h3>Data backup and transfer</h3><p>Moving your photos, contacts and chats to a new phone.</p></li>
-        </ul>
-    </div>
-  </section>
-
-  <section id="phones">
-    <div class="wrap">
-      <div class="head">
-        <p class="eyebrow">Phone sales</p>
-        <h2>Pick up a <span class="gold">new one.</span></h2>
-      </div>
-      <div class="duo">
-        <div class="tile hot">
-          <h3>Mobile phones</h3>
-          <ul>
-            <li>New smartphones</li>
-            <li>Help choosing a phone for your budget and needs</li>
-            <li>Setup and data transfer when you buy</li>
-          </ul>
-        </div>
-        <div class="tile">
-          <h3>Accessories</h3>
-          <ul>
-            <li>Cases and covers</li>
-            <li>Screen protectors</li>
-            <li>Chargers and cables</li>
-            <li>Earphones and power banks</li>
-          </ul>
-        </div>
-      </div>
-      <p class="fine">Stock and prices change. Call ahead if you are looking for a particular model.</p>
-    </div>
-  </section>
-
-  <section id="tips" style="padding-top:0">
-    <div class="wrap">
-      <div class="head">
-        <p class="eyebrow">Phone care</p>
-        <h2>Fewer repairs, <span class="gold">longer life.</span></h2>
+      <div class="head" data-r>
+        <p class="kicker"><i></i>Phone care</p>
+        <h2>Fewer repairs, <em>longer life.</em></h2>
       </div>
       <ul class="tips">
-        <li><h3>Case and screen protector</h3><p>The cheapest way to avoid a cracked screen or a dented frame.</p></li>
-        <li><h3>Good charger and cable</h3><p>Damaged or poor cables wear out charging ports and batteries.</p></li>
-        <li><h3>Keep it cool</h3><p>Do not leave your phone in a hot car or in direct sun. Heat shortens battery life.</p></li>
-        <li><h3>Update and back up</h3><p>Install updates and back up your photos and contacts regularly.</p></li>
+        <li data-r><h3>Case &amp; protector</h3><p>The cheapest way to avoid a cracked screen or a dented frame.</p></li>
+        <li data-r><h3>Good charger &amp; cable</h3><p>Poor cables wear out charging ports and batteries.</p></li>
+        <li data-r><h3>Keep it cool</h3><p>Not in a hot car or direct sun. Heat shortens battery life.</p></li>
+        <li data-r><h3>Update &amp; back up</h3><p>Install updates and back up photos and contacts regularly.</p></li>
       </ul>
     </div>
   </section>
 
-  <section id="process">
-    <div class="wrap">
-      <div class="head">
-        <p class="eyebrow">Repair process</p>
-        <h2>Five steps. <span class="gold">No surprises.</span></h2>
-        <p>You know the problem, the price and the time before we touch your phone.</p>
-      </div>
-      <ol class="flow">
-        <li><span class="node"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg><span class="n">1</span></span><h3>Bring it in</h3><p>Visit the shop at Lulu Ruwi Souq with your phone. Tell us what is wrong and when it started.</p></li>
-        <li><span class="node"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5"/></svg><span class="n">2</span></span><h3>We check it</h3><p>We test the phone, find the fault and explain it in plain words.</p></li>
-        <li><span class="node"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l4.5 4.5L19 7"/></svg><span class="n">3</span></span><h3>You approve</h3><p>You hear the price and the time first. Nothing is repaired until you say yes.</p></li>
-        <li><span class="node"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg><span class="n">4</span></span><h3>We repair</h3><p>The repair is done with care, then the phone is tested before it goes back to you.</p></li>
-        <li><span class="node"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 7h12l1 14H5z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg><span class="n">5</span></span><h3>You collect</h3><p>Check the phone with us before you leave, then take it home.</p></li>
-      </ol>
-      <div class="prep">
-        <div>
-          <h3>Before you come</h3>
-          <ul>
-            <li>Back up your photos and contacts if the phone still works.</li>
-            <li>Note your phone model and what the problem is.</li>
-            <li>If it got wet, switch it off and do not charge it.</li>
-          </ul>
-        </div>
-        <a class="btn solid" href="https://wa.me/96876438265?text=Hello%2C%20I%20need%20a%20phone%20repair." target="_blank" rel="noopener">Tell us the problem on WhatsApp</a>
-      </div>
-    </div>
-  </section>
-
-  <section id="faq">
-    <div class="wrap">
-      <div class="head">
-        <p class="eyebrow">Questions</p>
-        <h2>Before you <span class="gold">come in.</span></h2>
+  <section id="faq" class="sec">
+    <div class="wrap faq-grid">
+      <div class="head" data-r>
+        <p class="kicker"><i></i>Questions</p>
+        <h2>Before you <em>come in.</em></h2>
+        <p>Can't find your answer? Message us on WhatsApp.</p>
       </div>
       <div class="faq">
-        <details><summary>How do I know if my phone is worth repairing?</summary><p class="ans">Bring it in. We check the fault and tell you the repair price and time before we start, so you can decide.</p></details>
-        <details><summary>How long does a repair take?</summary><p class="ans">It depends on the fault and the part needed. We give you a time before we begin. Call us with your phone model and the problem and we will tell you what to expect.</p></details>
-        <details><summary>Will I lose my data?</summary><p class="ans">Many repairs do not touch your data, but a backup is always safer. Back up before you come, or ask us to help you back up and transfer your files.</p></details>
-        <details><summary>My phone got wet. What should I do?</summary><p class="ans">Switch it off straight away and do not charge it. Remove the case and SIM card, wipe the outside and bring it in as soon as you can. The sooner it is checked, the better the chance of saving it.</p></details>
-        <details><summary>Can you help me choose a new phone?</summary><p class="ans">Yes. Tell us your budget and what you use your phone for, such as photos, games, work or just calls and messages, and we will show you suitable options in the shop.</p></details>
-        <details><summary>Do you sell accessories?</summary><p class="ans">Yes. We stock cases, screen protectors, chargers, cables, earphones and power banks. Call ahead if you need something for a particular model.</p></details>
-        <details><summary>Where is the shop and when is it open?</summary><p class="ans">We are at Lulu Ruwi Souq, Muscat. Opening hours are not listed on this page, so please call or send a WhatsApp message before you travel.</p></details>
+        <details data-r><summary>How do I know if my phone is worth repairing?</summary><p class="ans">Bring it in. We check the fault and tell you the repair price and time before we start, so you can decide.</p></details>
+        <details data-r><summary>How long does a repair take?</summary><p class="ans">It depends on the fault and the part needed. We give you a time before we begin. Call us with your phone model and the problem and we will tell you what to expect.</p></details>
+        <details data-r><summary>Will I lose my data?</summary><p class="ans">Many repairs do not touch your data, but a backup is always safer. Back up before you come, or ask us to help you back up and transfer your files.</p></details>
+        <details data-r><summary>My phone got wet. What should I do?</summary><p class="ans">Switch it off straight away and do not charge it. Remove the case and SIM card, wipe the outside and bring it in as soon as you can. The sooner it is checked, the better the chance of saving it.</p></details>
+        <details data-r><summary>Can you help me choose a new phone?</summary><p class="ans">Yes. Tell us your budget and what you use your phone for, such as photos, games, work or just calls and messages, and we will show you suitable options in the shop.</p></details>
+        <details data-r><summary>Do you sell accessories?</summary><p class="ans">Yes. We stock cases, screen protectors, chargers, cables, earphones and power banks. Call ahead if you need something for a particular model.</p></details>
+        <details data-r><summary>Where is the shop and when is it open?</summary><p class="ans">We are at Lulu Ruwi Souq, Muscat. Opening hours are not listed on this page, so please call or send a WhatsApp message before you travel.</p></details>
       </div>
     </div>
   </section>
 
-  <section id="visit">
+  <section id="visit" class="sec tight">
     <div class="wrap">
-      <div class="head">
-        <p class="eyebrow">Visit us</p>
-        <h2>Find us in <span class="gold">Ruwi.</span></h2>
-      </div>
-      <div class="visit">
-        <div>
+      <div class="visit-card" data-r>
+        <div class="v-info">
+          <p class="kicker dark"><i></i>Visit us</p>
+          <h2>Find us <em>in Ruwi.</em></h2>
           <address>
             <strong>Desert Crown Investment LLC</strong>
-            Lulu Ruwi Souq<br>
-            Muscat, Sultanate of Oman<br>
-            P.O. Box 1313, P.C. 211
+            Lulu Ruwi Souq<br>Muscat, Sultanate of Oman<br>P.O. Box 1313, P.C. 211
           </address>
-          <p class="small"><a class="link" href="https://www.google.com/maps/search/?api=1&amp;query=Lulu+Ruwi+Souq+Muscat+Oman" target="_blank" rel="noopener">Open in Google Maps</a></p>
+          <a class="btn dark" href="https://www.google.com/maps/search/?api=1&amp;query=Lulu+Ruwi+Souq+Muscat+Oman" target="_blank" rel="noopener">Open in Google Maps</a>
           <p class="small">Opening hours are not listed here. Please call before you travel.</p>
         </div>
         <div class="phones">
@@ -253,29 +220,16 @@
       </div>
     </div>
   </section>
-
-  <section id="company" style="padding-top:0">
-    <div class="wrap">
-      <div class="head">
-        <p class="eyebrow">Company details</p>
-      </div>
-      <dl class="facts">
-        <div><dt>Company</dt><dd>Desert Crown Investment LLC</dd></div>
-        <div><dt>License No</dt><dd>L3763512</dd></div>
-        <div><dt>CR No</dt><dd>1645788</dd></div>
-        <div><dt>Postal address</dt><dd>P.O. Box 1313, P.C. 211</dd></div>
-      </dl>
-    </div>
-  </section>
 </main>
 
 <footer>
   <div class="wrap">
-    <img class="seal-ft" src="assets/logo-seal.jpg" alt="Desert Crown Investment LLC" width="1254" height="1254" loading="lazy">
+    <div class="big-word" aria-hidden="true">Desert Crown</div>
     <div class="cols">
+      <div><img class="seal-ft" src="assets/logo-seal.jpg" alt="Desert Crown Investment LLC" width="1254" height="1254" loading="lazy"></div>
       <div><h4>Address</h4><p>Lulu Ruwi Souq, Muscat, Oman<br>P.O. Box 1313, P.C. 211</p></div>
       <div><h4>Contact</h4><p>+968 76438265<br>+968 75145195</p></div>
-      <div><h4>Company details</h4><p>License No: L3763512<br>CR No: 1645788</p></div>
+      <div><h4>Company details</h4><p>Desert Crown Investment LLC<br>License No: L3763512<br>CR No: 1645788</p></div>
     </div>
     <div class="country">Sultanate of Oman</div>
   </div>
