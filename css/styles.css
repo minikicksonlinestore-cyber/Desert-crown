@@ -1,7 +1,7 @@
 /* Layout: committed dark-navy single look. Oversized gold-gradient type, a lattice wash behind the hero, and one interactive moment: a cracked phone you can repair. */
 :root {
   color-scheme: dark;
-  --ink: #04201e;
+  --ink: #000;
   --navy: #0a3d38;
   --navy-2: #10544b;
   --fg: #eef6f3;
@@ -341,3 +341,16 @@ footer { padding-bottom: 0; }
 .top nav { margin-left: auto; gap: 28px; }
 .hcall { margin-left: 0; }
 @media (min-width: 820px) { .hcall { display: inline-flex; } }
+
+/* logo seal: black background matches the site exactly */
+header.top, header.top.scrolled { background: #000; }
+.safe-band { background: #000; }
+.seal { display: block; line-height: 0; flex: none; }
+.seal img { width: 64px; height: 64px; display: block; }
+@media (min-width: 820px) { .seal img { width: 72px; height: 72px; } }
+.about { position: relative; }
+.seal-lg { display: block; width: min(300px, 70%); height: auto; margin: 0 auto; }
+@media (min-width: 900px) { .about { grid-template-columns: 300px 1fr 1fr; align-items: center; } .seal-lg { width: 100%; } }
+footer { background: #000; }
+.seal-ft { display: block; width: 120px; height: 120px; margin: 34px auto 0; }
+footer .cols { padding-top: 22px; }
