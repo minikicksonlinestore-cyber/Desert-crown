@@ -85,7 +85,7 @@
     'Desert Crown home': 'ديزرت كراون - الرئيسية', 'Sections': 'الأقسام', 'Menu': 'القائمة', 'A hand holding a new smartphone': 'يد تحمل هاتفاً ذكياً جديداً',
     'Why choose us': 'لماذا نحن', 'Illustration of three phones: back, front and a repaired status screen': 'رسم لثلاثة هواتف: خلفي وأمامي وشاشة بحالة مُصلحة',
     'Case': 'حافظة', 'Screen protector': 'واقي شاشة', 'Charger': 'شاحن', 'Earphones': 'سماعات', 'Power bank': 'بنك طاقة',
-    'Desert Crown Investment LLC seal': 'ختم ديزرت كراون للاستثمار ذ.م.م', 'Desert Crown Investment LLC': 'ديزرت كراون للاستثمار ذ.م.م', 'Switch language': 'تغيير اللغة'
+    'Desert Crown Investment LLC seal': 'ختم ديزرت كراون للاستثمار ذ.م.م', 'Desert Crown Investment LLC': 'ديزرت كراون للاستثمار ذ.م.م', 'Switch language': 'تغيير اللغة', 'Three new smartphones in white, blue and orange': 'ثلاثة هواتف ذكية جديدة باللون الأبيض والأزرق والبرتقالي'
   };
   var TITLE = { en: document.title, ar: 'ديزرت كراون للهواتف' };
   var metaD = document.querySelector('meta[name="description"]'), DESC = { en: metaD ? metaD.content : '', ar: 'صيانة وبيع الهواتف المحمولة في لولو سوق روي، مسقط، عُمان. إصلاح الشاشات والبطاريات ومنافذ الشحن، وهواتف جديدة وإكسسوارات.' };
