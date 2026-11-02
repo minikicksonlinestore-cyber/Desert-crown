@@ -548,3 +548,10 @@ html[dir="rtl"] .wm b { font-size: .7rem; }
 .visit-card .phone-row b { font-size: 1.2rem; }
 .visit-card .wa { min-height: 38px; padding: 0 16px; font-size: .82rem; }
 @media (min-width: 900px) { .visit-card { padding: 34px 40px; max-width: 920px; margin-inline: auto; gap: 30px; } }
+
+/* smaller hero buttons on phones */
+@media (max-width: 899px) {
+  .cta { gap: 8px; margin-top: 18px; flex-wrap: nowrap; }
+  .cta .btn, .cta .btn.big { flex: 0 0 auto; min-height: 40px; padding: 0 16px; font-size: .8rem; border-width: 1.5px; }
+  .cta .btn.solid { flex: 0 0 auto; box-shadow: 0 6px 18px rgba(223,176,115,.25); }
+}
