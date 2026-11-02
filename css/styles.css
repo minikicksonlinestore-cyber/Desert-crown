@@ -423,3 +423,30 @@ main, footer, header { position: relative; z-index: 1; } header.top { position: 
 @media (max-width: 899px) { .board { width: min(320px, 82vw); } .mc-wa { right: -14px; } .mc-loc { left: -14px; } }
 @media (prefers-reduced-motion: reduce) { .hero-photo { animation: none; } }
 .hero-photo { -webkit-mask-image: radial-gradient(ellipse 48% 54% at 50% 46%, #000 55%, transparent 100%); mask-image: radial-gradient(ellipse 48% 54% at 50% 46%, #000 55%, transparent 100%); }
+
+/* full-bleed hero photo that melts into the page background */
+.hero { isolation: isolate; }
+.hero .hero-copy { position: relative; z-index: 2; }
+.stage { position: absolute; z-index: 0; right: 0; top: 0; bottom: 0; width: 58%; margin: 0; padding: 0; display: block; pointer-events: none; }
+.board { width: 100%; height: 100%; padding: 0; position: relative; }
+.board::before { left: 62%; top: 44%; width: 90%; }
+.hero-photo { position: absolute; right: 0; top: 0; width: 100%; height: 100%; object-fit: cover; object-position: 58% 22%; animation: none;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 42%), linear-gradient(180deg, #000 70%, transparent 100%); -webkit-mask-composite: source-in;
+  mask-image: linear-gradient(90deg, transparent 0, #000 42%), linear-gradient(180deg, #000 70%, transparent 100%); mask-composite: intersect; }
+.hero-grid { grid-template-columns: minmax(0, 1fr); min-height: clamp(560px, 82vh, 780px); align-content: center; }
+@media (max-width: 899px) {
+  .stage { position: relative; order: -1; width: 100%; height: auto; margin: 0 0 -150px; }
+  .board { width: 100%; height: auto; }
+  .hero-photo { position: relative; height: 430px; width: 100%; object-position: 62% 18%;
+    -webkit-mask-image: linear-gradient(180deg, #000 55%, transparent 100%); mask-image: linear-gradient(180deg, #000 55%, transparent 100%); }
+  .hero-grid { min-height: 0; padding-top: 0; }
+  .hero-copy { margin-top: 0; }
+  .hero h1, .lede { text-shadow: 0 2px 24px #000; }
+}
+.stage { width: 46%; }
+.hero-photo { object-position: 50% 20%;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 26%, #000 74%, transparent 100%), linear-gradient(180deg, #000 68%, transparent 100%); -webkit-mask-composite: source-in;
+  mask-image: linear-gradient(90deg, transparent 0, #000 26%, #000 74%, transparent 100%), linear-gradient(180deg, #000 68%, transparent 100%); mask-composite: intersect; }
+@media (max-width: 899px) { .stage { width: 100%; } .hero-photo { height: 400px; object-position: 50% 15%;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 22%, #000 78%, transparent 100%), linear-gradient(180deg, #000 55%, transparent 100%); -webkit-mask-composite: source-in;
+  mask-image: linear-gradient(90deg, transparent 0, #000 22%, #000 78%, transparent 100%), linear-gradient(180deg, #000 55%, transparent 100%); mask-composite: intersect; } }
