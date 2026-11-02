@@ -93,7 +93,7 @@
   var nodes = [], attrs = [];
   var w = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT), n;
   while ((n = w.nextNode())) {
-    if (n.parentElement.closest('script,style,svg')) continue;
+    if (n.parentElement.closest('script,style,svg,[data-keep]')) continue;
     var raw = n.textContent, key = raw.replace(/\s+/g, ' ').trim();
     if (!key) continue;
     var ar = AR[key];

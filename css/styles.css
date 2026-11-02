@@ -500,3 +500,12 @@ html[dir="rtl"] footer .cols, html[dir="rtl"] footer p, html[dir="rtl"] footer h
 html[dir="rtl"] .fact { padding: 26px 0 26px 26px; }
 html[dir="rtl"] .head p, html[dir="rtl"] .lede { max-width: 54ch; }
 html[dir="rtl"] .phone-row b, html[dir="rtl"] .co-list a { unicode-bidi: isolate; }
+
+/* header name: English and Arabic always shown */
+.wm b { font-size: .98rem; letter-spacing: .06em; white-space: nowrap; }
+.wm small { font: 700 .9rem "Cairo", var(--sans); letter-spacing: 0 !important; text-transform: none !important; color: var(--gold-lt); margin-top: 3px; line-height: 1.2; text-align: start; }
+html[dir="rtl"] .wm b { letter-spacing: .02em !important; text-transform: uppercase !important; }
+html[lang="ar"] .wm b { font-family: "Cinzel", Georgia, serif; }
+@media (max-width: 899px) { .wm b { font-size: .68rem; letter-spacing: .03em; } .wm small { font-size: .78rem; } .bar { gap: 10px; } .seal img { width: 54px; height: 54px; } .lang { padding: 0 12px; min-height: 40px; font-size: .85rem; } .menu { width: 42px; height: 42px; } }
+@media (max-width: 400px) { .wm small { display: block !important; } .wm b { font-size: .62rem; } }
+@media (max-width: 899px) { .bar { gap: 8px; } .mini { gap: 8px; min-width: 0; flex: 1 1 auto; } .wm { min-width: 0; } .wm b { font-size: .58rem; letter-spacing: .02em; white-space: normal; line-height: 1.15; } .seal img { width: 48px; height: 48px; } .lang { padding: 0 10px; font-size: .8rem; min-height: 38px; } .menu { width: 40px; height: 40px; flex: none; } }
