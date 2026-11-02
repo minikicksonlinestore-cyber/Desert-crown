@@ -348,3 +348,21 @@ main, footer, header { position: relative; z-index: 1; } header.top { position: 
   .xv-scene { transform: rotateX(56deg) rotateZ(-34deg) scale(.7) translateY(80px); }
   .xv-scene.together { transform: rotateX(22deg) rotateZ(-14deg) scale(.78) translateY(10px); }
 }
+
+/* hero medal: the seal, large and clean */
+.stage { min-height: 0; padding: 0; display: grid; place-items: center; }
+.medal { position: relative; width: min(470px, 100%); aspect-ratio: 1; display: grid; place-items: center; }
+.disc { position: relative; width: 78%; aspect-ratio: 1; border-radius: 50%; overflow: hidden; background: #000; box-shadow: 0 0 0 2px rgba(223,176,115,.55), 0 0 70px rgba(223,176,115,.35), 0 40px 70px rgba(0,0,0,.8); }
+.disc img { display: block; width: 100%; height: 100%; }
+.shine { position: absolute; inset: -20%; background: linear-gradient(105deg, transparent 42%, rgba(255,240,215,.38) 50%, transparent 58%); transform: translateX(-80%); animation: sweep 5.5s ease-in-out infinite; mix-blend-mode: screen; }
+@keyframes sweep { 0%, 45% { transform: translateX(-80%); } 85%, 100% { transform: translateX(80%); } }
+.ring { position: absolute; border-radius: 50%; pointer-events: none; }
+.r1 { inset: 4%; border: 1px solid rgba(223,176,115,.5); }
+.r2 { inset: 0; border: 1px dashed rgba(223,176,115,.35); animation: rot 80s linear infinite; }
+.orbit { position: absolute; inset: 0; animation: rot 40s linear infinite; }
+.orbit i { position: absolute; font-style: normal; color: var(--gold-lt); font-size: 1rem; text-shadow: 0 0 12px rgba(252,228,194,.9); }
+.orbit i:nth-child(1) { left: 50%; top: -2px; transform: translateX(-50%); } .orbit i:nth-child(2) { right: -2px; top: 50%; transform: translateY(-50%); } .orbit i:nth-child(3) { left: 50%; bottom: -2px; transform: translateX(-50%); } .orbit i:nth-child(4) { left: -2px; top: 50%; transform: translateY(-50%); }
+@keyframes rot { to { transform: rotate(360deg); } }
+.glow { display: none; }
+@media (max-width: 899px) { .medal { width: min(300px, 78vw); } .stage { margin-top: 20px; } }
+@media (prefers-reduced-motion: reduce) { .shine, .ring, .orbit { animation: none !important; } }

@@ -3,13 +3,6 @@
   function setMenu(open) { nav.classList.toggle('open', open); menu.setAttribute('aria-expanded', open ? 'true' : 'false'); }
   menu.addEventListener('click', function () { setMenu(menu.getAttribute('aria-expanded') !== 'true'); });
   nav.addEventListener('click', function (e) { if (e.target.tagName === 'A') setMenu(false); });
-  var phone = document.getElementById('phone'), xv = document.getElementById('xv'), btn = document.getElementById('fix'), st = document.getElementById('state');
-  btn.addEventListener('click', function () {
-    var fixed = phone.classList.toggle('fixed');
-    st.textContent = fixed ? 'Repaired' : 'Cracked';
-    btn.textContent = fixed ? 'Crack it again' : 'Repair it';
-    btn.setAttribute('aria-pressed', fixed ? 'true' : 'false');
-  });
   document.querySelectorAll('.copy').forEach(function (b) {
     b.addEventListener('click', function () {
       var el = document.getElementById(b.dataset.copy), text = el.textContent;
@@ -60,18 +53,4 @@
   document.documentElement.classList.add('rv');
   var io = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }); }, { threshold: .1, rootMargin: '0px 0px -30px 0px' });
   els.forEach(function (el, i) { el.style.setProperty('--d', (i % 4) * 80 + 'ms'); io.observe(el); });
-})();
-
-(function () {
-  var s = document.getElementById('phone'), b = document.getElementById('xv'); if (!s || !b) return;
-  function set(t) { s.classList.toggle('together', t); b.textContent = t ? 'Take it apart' : 'Put together'; b.setAttribute('aria-pressed', t ? 'false' : 'true'); }
-  s.classList.add('together');
-  b.addEventListener('click', function () { set(!s.classList.contains('together')); });
-  setTimeout(function () { set(false); }, 700);
-  var ly = s.querySelectorAll('.ly');
-  document.querySelectorAll('.parts li').forEach(function (li) {
-    function on(v) { ly[li.dataset.n].classList.toggle('on', v); }
-    li.addEventListener('mouseenter', function () { on(true); }); li.addEventListener('mouseleave', function () { on(false); });
-    li.addEventListener('click', function () { on(true); setTimeout(function () { on(false); }, 1200); });
-  });
 })();
